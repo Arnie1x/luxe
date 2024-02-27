@@ -1,7 +1,12 @@
 <template>
-  <div>
+  <div class="flex flex-col h-screen items-center">
     <Header />
-    <slot />
+    <main class="grow">
+      <slot />
+
+    </main>
+
+    <Footer />
   </div>
 </template>
 

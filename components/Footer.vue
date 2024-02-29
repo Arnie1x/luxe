@@ -5,10 +5,16 @@
         <div class="flex flex-col items-center align-top">
           <NuxtLink to="/" class="font-title text-[60px] text-gold font-bold">luxe</NuxtLink>
           <div class="flex flex-row gap-2 items-baseline">
-            <a href="http://" class="font-gold "><Icon name="ic:baseline-facebook" color="#CBAB2A" size="2.3rem"/></a>
-            <a href="http://" class="font-gold"><Icon name="bi:instagram" color="#CBAB2A" size="2rem"/></a>
-            <a href="http://" class="font-gold"><Icon name="ri:twitter-x-fill" color="#CBAB2A" size="2rem"/></a>
-      
+            <a href="http://" class="font-gold ">
+              <Icon name="ic:baseline-facebook" color="#CBAB2A" size="2.3rem" />
+            </a>
+            <a href="http://" class="font-gold">
+              <Icon name="bi:instagram" color="#CBAB2A" size="2rem" />
+            </a>
+            <a href="http://" class="font-gold">
+              <Icon name="ri:twitter-x-fill" color="#CBAB2A" size="2rem" />
+            </a>
+
           </div>
         </div>
         <div>
@@ -31,7 +37,7 @@
           <!-- TODO :: Create and style the Input field -->
         </div>
       </div>
-      <div class="py-5 mb-2">
+      <div class="mb-7">
         <p>CUSTOMERSERVICE@LUXE.STORE | +254 1 2345 6789 | AVAILABLE 24/7</p>
       </div>
     </div>
@@ -42,6 +48,4 @@
 
 </script>
 
-<style>
-
-</style>
+<style></style>

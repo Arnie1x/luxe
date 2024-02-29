@@ -1,5 +1,5 @@
 <template>
-  <footer class="container">
+  <footer class="container mt-10">
     <div class="flex flex-col">
       <div class="flex flex-row align-top gap-2 justify-between py-10">
         <div class="flex flex-col items-center align-top">

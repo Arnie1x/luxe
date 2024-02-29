@@ -1,6 +1,6 @@
 <template>
   <header class="container sticky">
-    <nav class="mx-auto p-6 flex flex-row justify-between font-montserrat text-2xl">
+    <nav class="mx-auto py-6 flex flex-row justify-between font-montserrat text-2xl">
       <div class="flex flex-row gap-10 items-baseline">
         <NuxtLink to="/" class="font-title text-[60px] text-gold font-bold">luxe</NuxtLink>
         <NuxtLink to="/products">Men</NuxtLink>

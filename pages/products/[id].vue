@@ -1,10 +1,5 @@
 <template>
-  <div class="container mx-auto">
-    <h1>{{ product.title }}</h1>
-    <p>{{ product.price }}</p>
-    <p>{{ product.id }}</p>
-
-  </div>
+  <ProductDetails :product="product"/>
 </template>
 
 <script setup>

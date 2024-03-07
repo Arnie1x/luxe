@@ -1,5 +1,5 @@
-import { defineStore } from 'pinia'
-// import { ref, computed } from 'vue'
+// import { defineStore } from 'pinia'
+import { ref } from 'vue'
 
 export const useCartStore = defineStore('id', () => {
   const cartItems = ref([])
@@ -13,4 +13,6 @@ export const useCartStore = defineStore('id', () => {
   function clearCart(id) {
     cartItems.value = []
   }
+
+  return { cartItems }
 })

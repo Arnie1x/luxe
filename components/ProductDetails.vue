@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container mx-auto">
     <div class="grid md:grid-cols-2 sm:grid-cols-1 gap-10">
       <div class="p-7">
         <img :src="`${product.image}`" class="mx-auto my-7 h-[350px] w-min" />

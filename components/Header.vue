@@ -1,5 +1,5 @@
 <template>
-  <header class="container sticky">
+  <header class="container sticky mx-auto">
     <nav class="mx-auto py-6 flex flex-row justify-between font-montserrat text-2xl">
       <div class="flex flex-row gap-10 items-baseline">
         <NuxtLink to="/" class="font-title text-[60px] text-gold font-bold">luxe</NuxtLink>
@@ -14,7 +14,7 @@
         <NuxtLink to="/">
           <Icon name="ic:outline-account-circle" size="2.5rem" />
         </NuxtLink>
-        <NuxtLink to="/">
+        <NuxtLink to="/cart">
           <Icon name="ic:outline-shopping-cart" size="2.5rem" />
         </NuxtLink>
       </div>

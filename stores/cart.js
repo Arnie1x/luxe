@@ -1,4 +1,4 @@
-// import { defineStore } from 'pinia'
+import { defineStore } from 'pinia'
 import { ref } from 'vue'
 
 export const useCartStore = defineStore('id', () => {
@@ -14,5 +14,5 @@ export const useCartStore = defineStore('id', () => {
     cartItems.value = []
   }
 
-  return { cartItems }
+  return { cartItems, addToCart, removeFromCart, clearCart }
 })

@@ -6,9 +6,15 @@
       </div>
       <div class="p-7">
         <h2 class="text-4xl my-5">{{ product.title }}</h2>
-        <p class="text-xl my-5 font-bold border-b-2 mb-4 pb-2 text-artichoke border-onyx tracking-wider">&dollar;{{ product.price }}</p>
+        <p class="text-xl my-5 font-bold border-b-2 mb-4 pb-2 text-artichoke border-onyx tracking-wider">&dollar;{{
+          product.price }}</p>
         <p class="mb-7">{{ product.description }}</p>
-        <NuxtLink to="/" class="btn hover:scale-105 duration-150">Add to Cart</NuxtLink>
+        <div class="flex flex-row gap-5">
+          <button @click="addToCart" class="btn hover:scale-[102%] duration-150 grow border-0">Add to Cart</button>
+          <NuxtLink to="/cart" @click="addToCart" class="btn hover:scale-[102%] duration-150 grow cursor-pointer">Buy
+            Now</NuxtLink>
+
+        </div>
       </div>
     </div>
   </div>
@@ -16,6 +22,12 @@
 
 <script setup>
 const { product } = defineProps(['product'])
+const store = useCartStore()
+
+async function addToCart() {
+  // await useAsyncData('product', () => store.addToCart(product.id).then(() => true))
+  store.addToCart(product.id)
+}
 </script>
 
 <style></style>

@@ -7,5 +7,5 @@
 @tailwind utilities;
 
 .btn {
-  @apply px-4 py-2 m-4 bg-onyx text-[#FFFFFF] rounded-full mx-auto duration-150;
+  @apply px-4 py-2 m-4 bg-onyx text-[#FFFFFF] rounded-full mx-auto duration-150 text-center;
 }

@@ -3,13 +3,8 @@
     <p class="text-[50px] mb-4">Cart</p>
     <div class="mx-auto flex flex-row gap-10">
       <div class="grow grid grid-cols-1 gap-5">
-        <div v-for="item in store.cartItems">
-          <div class="flex flex-row justify-between gap-2">
-            <div class="flex flex-row gap-5">
-              <p>{{ item.title }}</p>
-              <p>Item</p>
-            </div>
-          </div>
+        <div v-for="product in products">
+          <CartItem :product="product" />
         </div>
       </div>
       <div class="max-w-sm">
@@ -20,9 +15,23 @@
 </template>
 
 <script setup>
+import { ref } from 'vue'
+import axios from 'axios';
+
 const store = useCartStore()
 console.log(store.cartItems)
 // TODO :: Fetch the items in the cart from the API
+
+const products = ref([])
+
+for (let index = 0; index < store.cartItems.length; index++) {
+  const id = store.cartItems[index];
+  const uri = 'https://fakestoreapi.com/products/' + id
+  const { data: product } = await axios.get(uri)
+  products.value.push(product)
+}
+
+
 </script>
 
 <style></style>
